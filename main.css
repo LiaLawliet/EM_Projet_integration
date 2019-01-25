@@ -1,0 +1,574 @@
+/******GLOBAL*******/
+@import url('https://fonts.googleapis.com/css?family=Cabin');
+html{
+    padding: 0;
+    margin: 0;
+}
+
+h1,h2,h3,h4,h5,h6,button{
+    font-family: 'Cabin', sans-serif;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/******FIN GLOBAL*******/
+
+/******HEADER********/
+header{
+    background-image: url("assets/bg-header.png");
+    background-repeat: repeat;
+    text-align: center;
+}
+#section-header-img{
+    padding: 5vh;
+}
+#header-nav{
+    padding: 2vh 0px;
+    background-color: #85ccd9;
+}
+#header-nav a{
+    text-decoration: none;
+    color: #16445c;
+    transition-duration: 0.2s;
+    text-transform: uppercase;
+}
+#header-nav a:hover{
+    text-decoration: none;
+    color: white;
+    transition-duration: 0.3s;
+}
+#header-nav li{
+    list-style: none;
+    display: inline;
+    font-family: 'Cabin', sans-serif;
+    font-size: 1.7rem;
+    transition-duration: 0.2s;
+    margin: 0px 1vw;
+    padding: 5px 2vw;
+}
+#header-nav li:hover{
+    background-color: #ff592f;
+    color: white;
+    transition-duration: 0.3s;
+}
+.active{
+    background-color: #ff592f;
+}
+
+/******FIN HEADER******/
+/********FOOTER********/
+
+footer{
+    background-color: #85ccd9;
+    padding: 3vh 16vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#copyright h1{
+    margin: 0;
+    color: #16445c;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#copyright span{
+    color: #ff592f;
+}
+
+#newsletter h1{
+    margin: 0;
+    color: #16445c;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+}
+
+#newsletter input{
+    padding: 5px;
+    border: none;
+    width: 76%;
+    outline: none;
+}
+#newsletter button{
+    width: 15%;
+    padding: 3px;
+    background-color: #16445c;
+    color: white;
+    border-color: #16445c;
+    outline: none;
+}
+
+#networks a{
+    color: #16445c;
+    font-size: 1.8rem;
+    transition-duration: 0.1s;
+}
+#networks a:hover{
+    color: white;
+    transition-duration: 0.2s;
+}
+
+#networks #wifi{
+    margin: 0px 15px;
+}
+
+/******FIN FOOTER******/
+
+
+/********************************************/
+/*****************  HOME  *******************/
+/********************************************/
+
+/*****SECTION HOME 1*******/
+
+#section-home-1{
+    padding: 5vh 16vw;
+}
+
+#section-home-1 h1{
+    color:#85ccd9;
+    font-size: 2rem;
+}
+
+#section-home-1 li{
+    color: #16445c;
+    margin-bottom: 1vh;
+}
+
+#section-home-1 .fa-li{
+    color: #ff592f;
+}
+
+#section-1-text{
+    width: 50vw;
+    text-align: left;
+}
+
+#section-home-1 .flex{
+    display: flex;
+}
+#section-home-1 img{
+    float: right;
+}
+
+/*******FIN SECTION HOME 1*******/
+
+/*********SECTION HOME 2*********/
+
+#section-home-2{
+    background-color: #edf2f1;
+    padding: 5vh 16vw;
+}
+
+#crsl-btn{
+    text-align: right;
+}
+
+.crsl-item{
+    margin: 0px 1vw;
+    outline:none;
+}
+
+.crsl-item img{
+    width: 100%;
+}
+
+.crsl-item h1{
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    color: #16445c;
+}
+
+.crsl-item button{
+    color: white;
+    background-color: #ff592f;
+    border: #ff592f 1px;
+    padding: 10px 2vw;
+    outline:none;
+    box-shadow: 1px 1px 1px grey;
+    margin-bottom: 2px;
+}
+.crsl-item button:hover{
+    transition: 0.1s;
+    color: #ff592f;
+    background-color: white;
+    border: #ff592f 1px;
+    padding: 10px 2vw;
+    outline:none;
+    box-shadow: 1px 1px 1px #ff592f;
+}
+
+#crsl-btn{
+    padding: 2vh 2vw;
+}
+
+#crsl-btn button{
+    font-size: 1.5rem;
+    color: white;
+    background-color: #16445c;
+    border: #16445c 1px;
+    outline:none;
+    padding: 0px 8px;
+}
+
+/*********FIN SECTION HOME 2*********/
+
+/*********SECTION HOME 3*********/
+
+#section-home-3{
+    padding: 3vh 16vw;
+    display: flex;
+}
+
+#section-home-3 h1{
+    color: #85ccd9;
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+
+.about-img{
+    display: flex;
+    align-items: flex-start;
+}
+#about{
+    padding-right: 5px;
+}
+#about button{
+    color: white;
+    background-color: #ff592f;
+    border: #ff592f 1px;
+    padding: 10px 2vw;
+    outline:none;
+    box-shadow: 1px 1px 1px grey;
+    transition: 0.2s;
+}
+#about button:hover{
+    transition: 0.1s;
+    color: #ff592f;
+    background-color: white;
+    border: #ff592f 1px;
+    padding: 10px 2vw;
+    outline:none;
+    box-shadow: 1px 1px 1px #ff592f;
+}
+.about-img p{
+    margin: 0;
+    padding-left: 10px;
+}
+
+.about-img span{
+    color: #16445c;
+}
+
+#about p{
+    padding-right: 60px;
+}
+
+#latest .flex{
+    display: flex;
+    align-items: flex-start; 
+}
+
+#latest .carré{
+    text-align: center;
+    padding: 5px 10px;
+    color: white;
+    background-color: #16445c;
+}
+#latest .flex h2{
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 100;
+    color: #16445c;
+}
+#latest .flex h3{
+    margin: 0;
+    font-size: 0.8rem;
+    font-weight: 100;
+    color: #ff592f;
+}
+#latest .titles{
+    padding-left: 10px;
+}
+
+/*********FIN SECTION HOME 3*********/
+
+/********************************************/
+/**************  FIN HOME  ******************/
+/********************************************/
+
+
+/********************************************/
+/**************  SERVICES  ******************/
+/********************************************/
+
+/**********  SECTION SERVICE 1  *************/
+
+#section-service-1 {
+    padding: 3vh 16vw;
+}
+
+#section-service-1 h1{
+    text-transform: uppercase;
+    font-size: 2rem;
+    color: #85ccd9;
+}
+#section-service-1 h2{
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    color: #16445c;
+}
+#section-service-1 i{
+    font-size: 2rem;
+}
+
+#section-service-1 .flex {
+    display: flex;
+}
+
+#section-service-1 .flex div{
+    padding-right: 10px;
+    height: 270px;
+    position: relative;
+}
+
+#section-service-1 .flex button{
+    color: white;
+    background-color: #ff592f;
+    border: #ff592f 1px;
+    padding: 10px 2vw;
+    outline:none;
+    box-shadow: 1px 1px 1px grey;
+    position: absolute;
+    bottom: 0;
+    transition: 0.1s;
+}
+#section-service-1 .flex button:hover{
+    transition: 0.1s;
+    color: #ff592f;
+    background-color: white;
+    border: #ff592f 1px;
+    padding: 10px 2vw;
+    outline:none;
+    box-shadow: 1px 1px 1px #ff592f;
+    position: absolute;
+    bottom: 0;
+}
+
+/********  FIN SECTION SERVICE 1  ***********/
+
+/**********  SECTION SERVICE 2  *************/
+
+#section-service-2 {
+    padding: 5vh 16vw;
+    background-color: #edf2f1;
+    display: flex;
+    justify-content: space-between;
+}
+#section-service-2 .div-item{
+    width: 32%; 
+}
+#section-service-2 ul{
+    margin: 0;
+}
+#section-service-2 ul li i{
+    color: #ff592f;
+}
+#section-service-2 h1{
+    text-transform: uppercase;
+    color: #85ccd9;
+    font-size: 2rem;
+}
+
+#section-service-2 .div2-flex{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+#section-service-2 .div2-flex p {
+    margin: 0;
+    margin-left: 10px;
+}
+
+#section-service-2 .blue{
+    color: #16445c;
+}
+
+
+/********  FIN SECTION SERVICE 2  ***********/
+
+/**********  SECTION SERVICE 3  *************/
+
+#section-service-3{
+    padding: 5vh 16vw;
+    padding-bottom: 10vh;
+}
+#section-service-3 h1{
+    text-transform: uppercase;
+    color: #85ccd9;
+    font-size: 2rem;
+}
+
+#section-service-3 .flex{
+    display:flex;
+}
+#section-service-3 .flex .div-item{
+    display: flex;
+    align-items: center;
+}
+
+#section-service-3 .flex .div-item p{
+    margin: 0px 10px;
+}
+
+/********  FIN SECTION SERVICE 3  ***********/
+
+/********************************************/
+/************  FIN SERVICES  ****************/
+/********************************************/
+
+
+/********************************************/
+/**************  CONTACTS  ******************/
+/********************************************/
+
+/*********** SECTION CONTACT 1  *************/
+
+#section-contact-1{
+    padding: 5vh 16vw;
+}
+
+#section-contact-1 h1{
+    text-transform: uppercase;
+    color: #85ccd9;
+    font-size: 2rem;
+}
+
+.star{
+    color: #ff592f;
+}
+
+#section-contact-1 .flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+#section-contact-1 .form input{
+    width: 98%;
+    padding: 8px 5px;
+    outline: none;
+    border: solid black 1px;
+    border-radius: 2px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    margin: 10px 0px;
+}
+#section-contact-1 .form textarea{
+    width: 98%;
+    height: 100px;
+    padding: 8px 5px;
+    border: solid black 1px;
+    border-radius: 2px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    outline: none;
+    resize: none;
+    margin: 10px 0px;
+}
+
+#section-contact-1 .form button{
+    color: white;
+    background-color: #ff592f;
+    border: #ff592f 1px;
+    margin-top: 15px;
+    padding: 10px 2vw;
+    outline:none;
+    box-shadow: 1px 1px 1px grey;
+    transition: 0.1s;
+}
+
+#section-contact-1 .form button:hover{
+    transition: 0.1s;
+    color: #ff592f;
+    background-color: white;
+    border: #ff592f 1px;
+    padding: 10px 2vw;
+    outline:none;
+    box-shadow: 1px 1px 1px #ff592f;
+}
+
+#section-contact-1 .map{
+    width: 50%;
+}
+
+#section-contact-1 .map .item-flex{
+    display: flex;
+    justify-content: space-between;
+}
+
+#section-contact-1 .map h2{
+    color: #16445c;
+    font-size: 1.1rem;
+}
+
+
+
+/********** FIN SECTION CONTACT 1  **********/
+
+/*********** SECTION CONTACT 2  *************/
+
+#section-contact-2{
+    padding: 5vh 16vw;
+    background-color: #edf2f1;
+}
+
+#section-contact-2 h1{
+    text-transform: uppercase;
+    color: #85ccd9;
+    font-size: 2rem;
+}
+
+#section-contact-2 figure {
+    display: block;
+    position: relative;
+    float: left;
+    overflow: hidden;
+    margin: 0 20px 20px 0;
+  }
+#section-contact-2 figcaption {
+    position: absolute;
+    background: #0a3869c2;
+    color: white;
+    width: 100%;
+    font-size: 0.8rem;
+    padding: 10px 10px;
+    -o-transition:      all 0.6s ease;
+    -moz-transition:    all 0.6s ease;
+    -webkit-transition: all 0.6s ease;
+}
+#section-contact-2 figure:hover figcaption {
+    opacity: 1;
+}
+#section-contact-2 figure:hover:before {
+    opacity: 0;
+  }
+  
+#section-contact-2 .cap-bot:before { bottom: 10px; left: 10px; }
+#section-contact-2 .cap-bot figcaption { left: 0; bottom: -30%;}
+#section-contact-2 .cap-bot:hover figcaption { bottom: 0;}
+
+#section-contact-2 .flex{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+/********** FIN SECTION CONTACT 2  **********/
+
+/********************************************/
+/************  FIN CONTACTS  ****************/
+/********************************************/
