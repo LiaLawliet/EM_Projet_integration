@@ -20,14 +20,16 @@ body{
 header{
     background-image: url("assets/bg-header.png");
     background-repeat: repeat;
-    text-align: center;
+    
 }
 #section-header-img{
     padding: 5vh;
+    text-align: center;
 }
 #header-nav{
     padding: 2vh 0px;
     background-color: #85ccd9;
+    text-align: center;
 }
 #header-nav a{
     text-decoration: none;
@@ -358,6 +360,45 @@ footer{
     position: absolute;
     bottom: 0;
 }
+@media screen and (max-width: 767px) {
+    #section-service-1 {
+        padding: 3vh 10vw;
+        text-align: center;
+    }
+    #section-service-1 .flex{
+        display: block;
+        text-align: left;
+    }
+    #section-service-1 .flex div{
+        position: unset;
+        height: auto;
+        margin-bottom: 45px;
+    }
+    #section-service-1 .flex div p {
+        text-align: justify;
+    }
+    #section-service-1 .flex button{
+        position: unset;
+    }
+    #section-service-1 .flex button:hover{
+        position: unset;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1366px) {
+    #section-service-1 .flex{
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    #section-service-1 .flex div{
+        width: 49%;
+        padding: 0;
+        margin-bottom: 30px;
+        height: 230px;
+    }
+    #section-service-1 {
+        padding: 3vh 10vw;
+    }
+}
 
 /********  FIN SECTION SERVICE 1  ***********/
 
@@ -398,6 +439,44 @@ footer{
     color: #16445c;
 }
 
+@media screen and (max-width: 767px) {
+    #section-service-2 {
+        padding: 3vh 10vw;
+        text-align: justify;
+        display: block;
+    }
+    #section-service-2 .div-item{
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    #section-service-2 h1{
+        text-align:center;
+        padding-top: 0;
+        margin-top: 0;      
+    }
+    #section-service-2 .div2-flex{
+        margin-bottom: 20px;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1366px) {
+    #section-service-2{
+        display: block;
+    }
+    #section-service-2 .div-item{
+        width: 100%;
+        margin-bottom: 50px; 
+    }
+    #section-service-2 .div2-flex {
+        margin-bottom: 20px;
+    }
+    #section-service-2 {
+        padding: 3vh 10vw;
+    }
+    #section-service-2 h1{
+        padding-top: 0;
+        margin-top: 0;
+    }
+}
 
 /********  FIN SECTION SERVICE 2  ***********/
 
@@ -424,6 +503,43 @@ footer{
 #section-service-3 .flex .div-item p{
     margin: 0px 10px;
 }
+
+@media screen and (max-width: 767px) {
+    #section-service-3 {
+        padding: 3vh 10vw;
+        text-align: justify;
+    }
+    #section-service-3 .flex{
+        display: block;
+    }
+    #section-service-3 .flex .div-item{
+        display: block;
+        text-align:center;    
+        margin-bottom: 30px;
+    }
+    #section-service-3 .flex .div-item p{
+        text-align: justify;
+    }
+    #section-service-3 h1{
+        text-align: center;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1366px) {
+    #section-service-3 .flex{
+        display: block;
+    }
+    #section-service-3 .flex .div-item{
+        margin-bottom: 30px;
+    }
+    #section-service-3 .flex .div-item p{
+        text-align: left;
+    }
+    #section-service-3 {
+        padding: 3vh 10vw;
+    }
+}
+
+
 
 /********  FIN SECTION SERVICE 3  ***********/
 
@@ -537,18 +653,17 @@ footer{
     position: relative;
     float: left;
     overflow: hidden;
-    margin: 0 20px 20px 0;
   }
 #section-contact-2 figcaption {
     position: absolute;
     background: #0a3869c2;
+    text-align: center;
     color: white;
     width: 100%;
-    font-size: 0.8rem;
-    padding: 10px 10px;
-    -o-transition:      all 0.6s ease;
-    -moz-transition:    all 0.6s ease;
-    -webkit-transition: all 0.6s ease;
+    font-size: 0.9rem;
+    -o-transition:      all 0.3s ease;
+    -moz-transition:    all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
 }
 #section-contact-2 figure:hover figcaption {
     opacity: 1;
@@ -558,7 +673,7 @@ footer{
   }
   
 #section-contact-2 .cap-bot:before { bottom: 10px; left: 10px; }
-#section-contact-2 .cap-bot figcaption { left: 0; bottom: -30%;}
+#section-contact-2 .cap-bot figcaption { left: 0; bottom: -50%;}
 #section-contact-2 .cap-bot:hover figcaption { bottom: 0;}
 
 #section-contact-2 .flex{
