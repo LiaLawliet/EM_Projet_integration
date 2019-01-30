@@ -313,6 +313,10 @@ footer{
 #section-service-1 {
     padding: 3vh 16vw;
 }
+#section-service-1>div {
+    max-width: 1024px;
+    margin: 0 auto;
+}
 
 #section-service-1 h1{
     text-transform: uppercase;
@@ -407,11 +411,15 @@ footer{
 #section-service-2 {
     padding: 5vh 16vw;
     background-color: #edf2f1;
+}
+#section-service-2>div{
     display: flex;
     justify-content: space-between;
+    max-width: 1024px;
+    margin: 0 auto;
 }
 #section-service-2 .div-item{
-    width: 32%; 
+    width: 32%;
 }
 #section-service-2 ul{
     margin: 0;
@@ -423,6 +431,7 @@ footer{
     text-transform: uppercase;
     color: #85ccd9;
     font-size: 2rem;
+    text-align: center;
 }
 
 #section-service-2 .div2-flex{
@@ -445,6 +454,9 @@ footer{
         text-align: justify;
         display: block;
     }
+    #section-service-2>div{
+        display: block;
+    }
     #section-service-2 .div-item{
         width: 100%;
         margin-bottom: 50px;
@@ -459,7 +471,7 @@ footer{
     }
 }
 @media screen and (min-width: 768px) and (max-width: 1366px) {
-    #section-service-2{
+    #section-service-2>div{
         display: block;
     }
     #section-service-2 .div-item{
@@ -485,6 +497,10 @@ footer{
 #section-service-3{
     padding: 5vh 16vw;
     padding-bottom: 10vh;
+}
+#section-service-3>div{
+    max-width: 1024px;
+    margin: 0 auto;
 }
 #section-service-3 h1{
     text-transform: uppercase;
