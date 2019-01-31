@@ -131,6 +131,11 @@ footer{
     padding: 5vh 16vw;
 }
 
+#section-home-1>div {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
 #section-home-1 h1{
     color:#85ccd9;
     font-size: 2rem;
@@ -146,15 +151,44 @@ footer{
 }
 
 #section-1-text{
-    width: 50vw;
     text-align: left;
 }
 
 #section-home-1 .flex{
     display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
-#section-home-1 img{
-    float: right;
+
+@media screen and (max-width: 767px) {
+    #section-home-1 .flex{
+        display: block;
+    }
+    #section-home-1 h1 {
+        text-align: center;
+    }
+    #section-home-1 p {
+        text-align: justify;
+    }
+    #section-home-1 .flex img{
+        display: block;
+        margin: 0 auto;
+    }
+    #section-home-1 {
+        padding: 3vh 10vw;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1366px) {
+    #section-home-1 .flex{
+        display: block;
+    }
+    #section-home-1 .flex img{
+        display: block;
+        margin: 0 auto;
+    }
+    #section-home-1 {
+        padding: 3vh 10vw;
+    }
 }
 
 /*******FIN SECTION HOME 1*******/
@@ -164,6 +198,11 @@ footer{
 #section-home-2{
     background-color: #edf2f1;
     padding: 5vh 16vw;
+}
+
+#section-home-2>div {
+    max-width: 1024px;
+    margin: 0 auto;
 }
 
 #crsl-btn{
@@ -223,6 +262,11 @@ footer{
 
 #section-home-3{
     padding: 3vh 16vw;
+}
+
+#section-home-3>div {
+    max-width: 1024px;
+    margin: 0 auto;
     display: flex;
 }
 
@@ -295,6 +339,48 @@ footer{
 }
 #latest .titles{
     padding-left: 10px;
+}
+@media screen and (max-width: 767px) {
+    #section-home-3 {
+        padding: 3vh 10vw;
+    }
+    #section-home-3>div{
+        display: block;
+    }
+    #section-home-3 h1 {
+        text-align: center;
+    }
+    #section-home-1 p {
+        text-align: justify;
+    }
+    #section-home-1 .flex img{
+        display: block;
+        margin: 0 auto;
+    }
+    .about-img{
+        display: block;
+    }
+    .about-img img{
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 25px;
+    }
+    #about p{
+        padding: 0;
+        text-align: justify;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1366px) {
+    #section-home-3 {
+        padding: 3vh 10vw;
+    }
+    #section-home-3>div{
+        display: block;
+    }
+    #section-home-1 .flex img{
+        display: block;
+        margin: 0 auto;
+    }
 }
 
 /*********FIN SECTION HOME 3*********/
@@ -487,6 +573,7 @@ footer{
     #section-service-2 h1{
         padding-top: 0;
         margin-top: 0;
+        text-align: left;
     }
 }
 
