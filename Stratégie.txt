@@ -1,0 +1,2 @@
+﻿J'ai décider de remettre simplement a la ligne le contenu au format tablette et de tout centrer pour le format mobile.
+Le menu de navigation format mobile n'est autre qu'un menu burger.

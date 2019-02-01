@@ -1,10 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>MasterMind - Home</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Coaching and mentoring program">
+    <meta name="keywords" content="MasterMind, Home, Coaching, Mentoring">
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="js/slick/slick.css"/>
@@ -16,14 +18,41 @@
             <img src="assets/header-img.png" alt="MasterMind" title="MasterMind">
         </section>
             <nav id="header-nav">
-                <ul>
-                    <li class="active"><a href="index.html"><strong>Home</strong></a></li>
-                    <li><a href=""><strong>About</strong></a></li>
-                    <li><a href=""><strong>Projects</strong></a></li>
-                    <li><a href="services.html"><strong>Services</strong></a></li>
-                    <li><a href="contact.html"><strong>Contacts</strong></a></li>
-                </ul>
+				<div>
+					<a class="active" href="index.html"><strong>Home</strong></a>
+					<div class="dropdown">
+							<span class="dropbtn"><strong>About</strong>
+							</span>
+						<div class="dropdown-content">
+							<a href="">OUR HISTORY</a>
+							<br>
+							<a href="">OUR CLIENTS</a>
+							<br>
+							<a href="">FAQs</a>
+						</div>
+					</div>
+					<a href=""><strong>Projects</strong></a>
+					<a href="services.html"><strong>Services</strong></a>
+					<a href="contact.html"><strong>Contacts</strong></a>
+				</div>
             </nav>
+            <div class="topnav" id="myTopnav">
+                <a href="index.html" class="active">Home</a>
+                <div class="dropdown">
+                    <button class="dropbtn">About 
+                    <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="">OUR HISTORY</a>
+                        <a href="">OUR CLIENTS</a>
+                        <a href="">FAQs</a>
+                    </div>
+                </div> 
+                <a href="">Projects</a>
+                <a href="services.html">Services</a>
+                <a href="contact.html">Contacts</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+            </div>
     </header>
     <section id="section-home-1">
         <div>
@@ -42,8 +71,9 @@
                         Our process has been specifically designed for small businesses and it works. We'll help you master the 5 Key Capabilities - leadership, marketing, sales, finances and operations - so that you acheive your vision and much more... 
                     </p>
                 </div>
-
-                <img class="" src="assets/home-section-1.png" alt="COACHING & MENTORING" title="COACHING & MENTORING">
+                <picture>
+                    <img class="" src="assets/home-section-1.png" alt="COACHING & MENTORING" title="COACHING & MENTORING">
+                </picture>
                 
             </div>
         </div>
@@ -111,7 +141,9 @@
             <div id="about" class="inline">
                 <h1>About us</h1>
                 <div class="about-img">
-                    <img src="assets/home-section-3.png" alt="About us" title="About us">
+                    <picture>
+                        <img src="assets/home-section-3.png" alt="About us" title="About us">
+                    </picture>
                     <p><span>MasterMind strives to collaborate with customers who have the ambition to be "best-in-class"in their activities.</span><br><br>The search for excellence guides our actions. MasterMind's service strategy is simple: provide our clients with solutions that give them a competitive advantage.</p>
                 </div>
                 <p>These solutions are tailored to the needs, development, deployment, training, change and project management and support.<br><br>MasterMind has built its success on the partnerships that it creates with its clients. Stemming from its comprehensive commercial and technical understanding of business needs. MasterMind views its role as much more than a mere applications publisher and seller.</p>
@@ -149,22 +181,25 @@
         </div>
     </section>
     <footer>
-        <div id="copyright">
-            <h1>MasterMind © 2018<br><span>Privacy Policy</span></h1>
-        </div>
-        <div id="newsletter">
-            <h1>Subscribe to our newsletter:</h1>
-            <input type="email" id="email" name="email" placeholder="your email address">
-            <button>OK</button>
-        </div>
-        <div id="networks">
-            <a href="" id="letter"><i class="fas fa-envelope"></i></a>
-            <a href="" id="wifi"><i class="fas fa-rss"></i></a>
-            <a href="" id="twitter"><i class="fab fa-twitter"></i></a>
+        <div>
+            <div id="copyright">
+                <h1>MasterMind © 2018<br><span>Privacy Policy</span></h1>
+            </div>
+            <div id="newsletter">
+                <h1>Subscribe to our newsletter:</h1>
+                <input type="email" id="email" name="email" placeholder="your email address">
+                <button>OK</button>
+            </div>
+            <div id="networks">
+                <a href="" id="letter"><i class="fas fa-envelope"></i></a>
+                <a href="" id="wifi"><i class="fas fa-rss"></i></a>
+                <a href="" id="twitter"><i class="fab fa-twitter"></i></a>
+            </div>
         </div>
     </footer>
     <script type="text/javascript" src="js/slick/slick.min.js"></script>
   
-    <script src="js/home.js"></script>
+    <script type="text/javascript" src="js/home.js"></script>
+    <script type="text/javascript" src="js/responsive-nav.js"></script>
 </body>
 </html>

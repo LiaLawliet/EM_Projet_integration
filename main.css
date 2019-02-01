@@ -29,43 +29,207 @@ header{
 #header-nav{
     padding: 2vh 0px;
     background-color: #85ccd9;
-    text-align: center;
 }
-#header-nav a{
+#header-nav>div{
+    max-width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+#header-nav>div>a,#header-nav .dropdown{
+    font-family: 'Cabin', sans-serif;
+    font-size: 1.5rem;
     text-decoration: none;
     color: #16445c;
     transition-duration: 0.2s;
     text-transform: uppercase;
+    padding: 1vh 2vw;
 }
-#header-nav a:hover{
+#header-nav .active{
+    color: white;
+    background-color: #ff592f;
+}
+#header-nav>div>a:hover,#header-nav .dropdown:hover{
     text-decoration: none;
     color: white;
     transition-duration: 0.3s;
-}
-#header-nav li{
-    list-style: none;
-    display: inline;
-    font-family: 'Cabin', sans-serif;
-    font-size: 1.7rem;
-    transition-duration: 0.2s;
-    margin: 0px 1vw;
-    padding: 5px 2vw;
-}
-#header-nav li:hover{
-    background-color: #ff592f;
-    color: white;
-    transition-duration: 0.3s;
-}
-.active{
     background-color: #ff592f;
 }
 
+@media screen and (max-width: 767px) {
+    #header-nav{
+        display: none;
+
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1366px) {
+    #header-nav{
+        padding: 2vh 10vw;
+    }
+}
+
+#header-nav .dropdown {
+    position: relative;
+}
+
+#header-nav .dropdown-content {
+    display: none;
+    position: absolute;
+    top: 55px;
+    left: -50px;
+    width: 250px;
+    background-color: #e2e2e2b5;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+#header-nav .dropdown-content a{
+    color: #16445c;
+    text-decoration: none;
+    font-size: 1.5rem;
+    padding: 1vh 2vw;
+
+}
+
+#header-nav .dropdown:hover .dropdown-content {
+    display: block;
+}
+
 /******FIN HEADER******/
+
+/******HEDER RESPONSIVE******/
+
+.topnav {
+    overflow: hidden;
+    background-color: #85ccd9;
+    font-family: 'Cabin', sans-serif;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: #16445c;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+  
+  
+.topnav .icon {
+    display: none;
+}
+  
+#myTopnav .dropdown {
+    float: left;
+    overflow: hidden;
+    font-size: 1.2rem;
+    display: contents;
+}
+  
+#myTopnav .dropdown .dropbtn {
+    font-size: 17px;    
+    border: none;
+    outline: none;
+    color: #16445c;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+  
+#myTopnav .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #a0a0a0;
+    min-width: 100%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+  
+#myTopnav .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}
+  
+#myTopnav .topnav a:hover, #myTopnav .dropdown:hover #myTopnav .dropbtn {
+    background-color: #ff592f;
+    color: white;
+}
+  
+#myTopnav .dropdown-content a:hover {
+    background-color: #ddd;
+    color: black;
+}
+  
+#myTopnav .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.topnav .active{
+    color: white;
+    background-color: #ff592f;
+}
+.topnav a:hover{
+    text-decoration: none;
+    color: white;
+    transition-duration: 0.3s;
+    background-color: #ff592f;
+}
+  
+  @media screen and (min-width: 768px) {
+    .topnav {
+      display: none;
+    }
+  }
+  @media screen and (max-width: 767px) {
+    .topnav a:not(:first-child), .topnav .dropdown .dropbtn {
+      display: none;
+    }
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+  }
+  
+  @media screen and (max-width: 767px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    .topnav.responsive .dropdown {float: none;}
+    .topnav.responsive .dropdown-content {position: relative;}
+    .topnav.responsive .dropdown .dropbtn {
+      display: block;
+      width: 100%;
+      text-align: left;
+    }
+  }
+
+/******FIN HEADER RESPONSIVE******/
+
+
 /********FOOTER********/
 
 footer{
     background-color: #85ccd9;
     padding: 3vh 16vw;
+}
+footer>div{
+    max-width: 1024px;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -116,6 +280,23 @@ footer{
 
 #networks #wifi{
     margin: 0px 15px;
+}
+@media screen and (max-width: 767px) {
+    footer{
+        padding: 3vh 10vw;
+    }
+    footer>div{
+        text-align: center;
+        display: block;
+    }
+    footer>div>div{
+        margin-bottom: 30px;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1366px) {
+    footer{
+        padding: 3vh 10vw;
+    }
 }
 
 /******FIN FOOTER******/
@@ -738,6 +919,46 @@ footer{
     color: #16445c;
     font-size: 1.1rem;
 }
+@media screen and (max-width: 767px) {
+    #section-contact-1 {
+        padding: 3vh 10vw;
+    }
+    #section-contact-1 .flex{
+        flex-wrap: wrap;
+    }
+    #section-contact-1 h1{
+        text-align: center;
+    }
+    #section-contact-1 .form{
+        margin-bottom: 30px;
+    }
+    #section-contact-1 .map {
+        width: 100%;
+    }
+    #section-contact-1 .map .item-flex{
+        flex-wrap: wrap;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    #section-contact-1 {
+        padding: 3vh 10vw;
+    }
+    #section-contact-1 .flex{
+        flex-wrap: wrap;
+    }
+    #section-contact-1 .form{
+        margin-bottom: 30px;
+    }
+    #section-contact-1 .map {
+        width: 100%;
+    }
+    #section-contact-1 .form textarea{
+        max-width: 330px;
+    }
+    #section-contact-1 .map .item-flex{
+        justify-content: space-evenly
+    }
+}
 
 
 
@@ -766,6 +987,8 @@ footer{
     position: relative;
     float: left;
     overflow: hidden;
+    margin-left: 0;
+    margin-right: 0;
   }
 #section-contact-2 figcaption {
     position: absolute;
@@ -793,8 +1016,31 @@ footer{
 
 #section-contact-2 .flex{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
+
+@media screen and (max-width: 767px) {
+    #section-contact-2 {
+        padding: 3vh 10vw;
+    }
+    #section-contact-2 .flex{
+        flex-wrap:wrap;
+        justify-content: space-around; 
+    }
+    #section-contact-2 h1{
+        text-align: center;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1366px) {
+    #section-contact-2 {
+        padding: 3vh 10vw;
+    }
+    #section-contact-2 .flex{
+        flex-wrap:wrap;
+        justify-content: space-around; 
+    }
+}
+
 
 
 /********** FIN SECTION CONTACT 2  **********/

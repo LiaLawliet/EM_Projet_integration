@@ -1,10 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>MasterMind - Services</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Coaching and mentoring program">
+    <meta name="keywords" content="MasterMind, Services, FEATURED SERVICES, SERVICES LIST,HOW WE WORK,BUSINESS PLAN,OUR METHODS">
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -15,14 +17,41 @@
             <img src="assets/header-img.png" alt="MasterMind" title="MasterMind">
         </section>
             <nav id="header-nav">
-                <ul>
-                    <li><a href="index.html"><strong>Home</strong></a></li>
-                    <li><a href=""><strong>About</strong></a></li>
-                    <li><a href=""><strong>Projects</strong></a></li>
-                    <li class="active"><a href="services.html"><strong>Services</strong></a></li>
-                    <li><a href="contact.html"><strong>Contacts</strong></a></li>
-                </ul>
+				<div>
+					<a href="index.html"><strong>Home</strong></a>
+					<div class="dropdown">
+							<span class="dropbtn"><strong>About</strong>
+							</span>
+						<div class="dropdown-content">
+							<a href="">OUR HISTORY</a>
+							<br>
+							<a href="">OUR CLIENTS</a>
+							<br>
+							<a href="">FAQs</a>
+						</div>
+					</div>
+					<a href=""><strong>Projects</strong></a>
+					<a class="active" href="services.html"><strong>Services</strong></a>
+					<a href="contact.html"><strong>Contacts</strong></a>
+				</div>
             </nav>
+            <div class="topnav" id="myTopnav">
+                <a href="index.html">Home</a>
+                <div class="dropdown">
+                    <button class="dropbtn">About 
+                    <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="">OUR HISTORY</a>
+                        <a href="">OUR CLIENTS</a>
+                        <a href="">FAQs</a>
+                    </div>
+                </div> 
+                <a href="">Projects</a>
+                <a class="active" href="services.html">Services</a>
+                <a href="contact.html">Contacts</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+            </div>
     </header>
     <section id="section-service-1">
         <div>
@@ -70,11 +99,15 @@
             <div class="div-item">
                 <h1>How we work</h1>
                 <div class="div2-flex">
-                    <img src="assets/services-section-2-img1.png" alt="How we work" title="How we work">
+                    <picture>
+                        <img src="assets/services-section-2-img1.png" alt="How we work" title="How we work">
+                    </picture>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, laboriosam mollitia placeat inventore quas maiores facere</p>
                 </div>
                 <div class="div2-flex">
-                    <img src="assets/services-section-2-img2.png" alt="How we work" title="How we work">
+                    <picture>
+                        <img src="assets/services-section-2-img2.png" alt="How we work" title="How we work">
+                    </picture>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, laboriosam mollitia placeat inventore quas maiores facere</p>
                 </div>
             </div>
@@ -90,34 +123,43 @@
             <h1>Our methods</h1>
             <div class="flex">
                 <div class="div-item">
-                    <img src="assets/services-section-3-img1.png" alt="Our methods" title="Our methods">
+                    <picture>
+                        <img src="assets/services-section-3-img1.png" alt="Our methods" title="Our methods">
+                    </picture>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, corporis consectetur hic asperiores nihil amet</p>
                 </div>
                 <div class="div-item">
-                    <img src="assets/services-section-3-img2.png" alt="Our methods" title="Our methods">
+                    <picture>
+                        <img src="assets/services-section-3-img2.png" alt="Our methods" title="Our methods">
+                    </picture>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, corporis consectetur hic asperiores nihil amet</p>
                 </div>
                 <div class="div-item">
-                    <img src="assets/services-section-3-img3.png" alt="Our methods" title="Our methods">
+                    <picture>
+                        <img src="assets/services-section-3-img3.png" alt="Our methods" title="Our methods">
+                    </picture>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, corporis consectetur hic asperiores nihil amet</p>
                 </div>
             </div>
         </div>
     </section>
     <footer>
-        <div id="copyright">
-            <h1>MasterMind © 2018<br><span>Privacy Policy</span></h1>
-        </div>
-        <div id="newsletter">
-            <h1>Subscribe to our newsletter:</h1>
-            <input type="email" id="email" name="email" placeholder="your email address">
-            <button>OK</button>
-        </div>
-        <div id="networks">
-            <a href="" id="letter"><i class="fas fa-envelope"></i></a>
-            <a href="" id="wifi"><i class="fas fa-rss"></i></a>
-            <a href="" id="twitter"><i class="fab fa-twitter"></i></a>
+        <div>
+            <div id="copyright">
+                <h1>MasterMind © 2018<br><span>Privacy Policy</span></h1>
+            </div>
+            <div id="newsletter">
+                <h1>Subscribe to our newsletter:</h1>
+                <input type="email" id="email" name="email" placeholder="your email address">
+                <button>OK</button>
+            </div>
+            <div id="networks">
+                <a href="" id="letter"><i class="fas fa-envelope"></i></a>
+                <a href="" id="wifi"><i class="fas fa-rss"></i></a>
+                <a href="" id="twitter"><i class="fab fa-twitter"></i></a>
+            </div>
         </div>
     </footer>
+    <script type="text/javascript" src="js/responsive-nav.js"></script>
 </body>
 </html>
